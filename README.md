@@ -52,13 +52,13 @@ If you want not to be included in the list, please create an ISSUE or contact us
 
 ### javascript-calculator
 
-    •	성은우/@eunwoo-levi
-    •	이동현/@L2HYUNN
-    •	이지예/@jiyeeeah
-    •	이진/@j-nary
-    •	이재윤/@devjaeyoon
-    •	김민정/@minjeongss
-    •	황현정/@bunju20
-    •	이나영/@Bewheneverwhatiwant
-    •	김덕빈/@Db0111
-    •	서성원/@seongwon030 ￼
+- 성은우/@eunwoo-levi
+- 이동현/@L2HYUNN
+- 이지예/@jiyeeeah
+- 이진/@j-nary
+- 이재윤/@devjaeyoon
+- 김민정/@minjeongss
+- 황현정/@bunju20
+- 이나영/@Bewheneverwhatiwant
+- 김덕빈/@Db0111
+- 서성원/@seongwon030 ￼
