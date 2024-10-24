@@ -1,10 +1,11 @@
 {
-  "name": "woowacourse-precourse-test",
+  "name": "woowacourse-precourse-test-generator",
   "version": "1.0.0",
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint -c eslint.config.mjs"
+    "lint": "eslint -c eslint.config.mjs",
+    "start:crawling": "pnpm --filter crawling start"
   },
   "keywords": [],
   "author": "",

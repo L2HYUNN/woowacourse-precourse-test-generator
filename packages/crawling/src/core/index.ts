@@ -1,24 +1,23 @@
-import puppeteer from 'puppeteer';
+import { Extractor } from './extractor/extractor';
+import { Crawler } from './crawler/crawler';
+import { URLS } from './crawler/urls';
+import { System } from './system/system';
 
+class App {
+  async run() {
+    const crawler = new Crawler();
+    const extractor = new Extractor();
+    const system = new System();
+
+    crawler.setURLs(Object.values(URLS));
+
+    const testcodes = await crawler.crawl();
+    const extractedTestCodes = testcodes.map((testCode) => extractor.extractDescirbeFromHTML(testCode));
+    system.createTestFile(extractedTestCodes.join('\n'));
+  }
+}
+
+const app = new App();
 (async () => {
-  const browser = await puppeteer.launch({ headless: true });
-  const page = await browser.newPage();
-
-  // Navigate to the PR test file URL
-  const url =
-    'https://github.com/woowacourse-precourse/javascript-calculator-7/blob/e2f7c5b49146d0aef63dad00f3b4dc211e8d838f/__tests__/ApplicationTest.js#L11';
-  await page.goto(url, { waitUntil: 'networkidle0' });
-
-  await page.waitForSelector('#read-only-cursor-text-area');
-  // Extract the test code content
-  const testCode = await page.evaluate(() => {
-    const codeElement = document.querySelector('#read-only-cursor-text-area'); // Target the code block container
-    console.log('codeElement:', codeElement);
-    return codeElement ? (codeElement as HTMLElement).innerHTML : 'Code not found';
-  });
-
-  console.log('Extracted Test Code:');
-  console.log(testCode);
-
-  await browser.close();
+  app.run();
 })();
