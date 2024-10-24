@@ -1,3 +1,3 @@
 export interface ISystem {
-  createTestFile(testCode: string): void;
+  createTestFile(testCode: string, testFilePath: string): void;
 }

@@ -13,7 +13,7 @@ class App {
 
     const testcodes = await crawler.crawl();
     const extractedTestCodes = testcodes.map((testCode) => extractor.extractDescirbeFromHTML(testCode));
-    system.createTestFile(extractedTestCodes.join('\n'));
+    system.createTestFile(extractedTestCodes.join('\n'), './dist/javascript-calculator/ApplicationTest.js');
   }
 }
 

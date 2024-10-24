@@ -4,13 +4,15 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node src/core/index.ts"
+    "start": "ts-node src/core/index.ts",
+    "clipboard": "ts-node src/core/cli/clipboard.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@types/puppeteer": "7.0.4",
+    "clipboardy": "2.3.0",
     "puppeteer": "23.6.0",
     "ts-node": "10.9.2"
   }
