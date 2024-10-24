@@ -52,6 +52,8 @@ If you want not to be included in the list, please create an ISSUE or contact us
 
 ### javascript-calculator
 
+![crawling-result](./assets/image.png)
+
 - 성은우/@eunwoo-levi
 - 이동현/@L2HYUNN
 - 이지예/@jiyeeeah
